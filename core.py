@@ -1,13 +1,8 @@
-import sys
-import os
 import mainWin
 import aboutWin
-from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
 import random
-import time
-
 
 class core(QtWidgets.QMainWindow, mainWin.Ui_MainWindow):
     def __init__(self):
