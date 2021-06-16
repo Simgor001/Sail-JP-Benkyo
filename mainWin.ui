@@ -22,7 +22,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>日本語の音節文字学習</string>
+   <string>Sail JP Benkyo</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -198,6 +198,22 @@
       </item>
      </layout>
     </item>
+    <item>
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -206,12 +222,12 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>18</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>ヘルプ</string>
+     <string>ヘルプ(&amp;H)</string>
     </property>
     <addaction name="action_about"/>
     <addaction name="action_QT"/>
@@ -220,13 +236,13 @@
   </widget>
   <action name="action_about">
    <property name="text">
-    <string>について...</string>
+    <string>Sail JP Benkyo について...</string>
    </property>
    <property name="iconText">
-    <string>について...</string>
+    <string>Sail JP Benkyo について...</string>
    </property>
    <property name="toolTip">
-    <string>について...</string>
+    <string>Sail JP Benkyo について...</string>
    </property>
   </action>
   <action name="action_QT">

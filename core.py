@@ -1,6 +1,7 @@
 import sys
 import os
 import mainWin
+import aboutWin
 from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from PyQt5 import QtGui
@@ -22,6 +23,14 @@ class core(QtWidgets.QMainWindow, mainWin.Ui_MainWindow):
         self.action_QT.triggered.connect(QtWidgets.QApplication.aboutQt)
         self.pushButton.clicked.connect(self.clicked)
         self.pushButton.setShortcut(" ")
+        self.action_about.triggered.connect(self.about)
+
+    def about(self):
+        class AboutDialog(QtWidgets.QDialog, aboutWin.Ui_aboutWin):
+            def __init__(self, parent):
+                super().__init__(parent)
+                self.setupUi(self)
+        AboutDialog(self).show()
 
     def resizeEvent(self, Event):
         super().resizeEvent(Event)
